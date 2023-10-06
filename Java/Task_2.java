@@ -18,7 +18,6 @@ public class RomanToIntegerConverter {
     }
 
     private static int romanToInteger(String s) {
-        // Create a mapping of Roman numeral symbols to their integer values
         int[] values = {1000, 900, 500, 400, 100, 90, 50, 40, 10, 9, 5, 4, 1};
         String[] symbols = {"M", "CM", "D", "CD", "C", "XC", "L", "XL", "X", "IX", "V", "IV", "I"};
 
@@ -32,7 +31,6 @@ public class RomanToIntegerConverter {
             }
         }
 
-        // Check if the entire string was processed
         return i == s.length() ? result : -1; // -1 indicates an invalid Roman numeral
     }
 }
