@@ -20,10 +20,8 @@ public class PangramChecker {
     }
 
     private static boolean checkPangram(String sentence) {
-        // Create a set to store unique characters
         Set<Character> uniqueChars = new HashSet<>();
 
-        // Iterate through each character in the sentence
         for (char c : sentence.toCharArray()) {
             // Check if the character is an alphabet letter
             if (Character.isLetter(c)) {
